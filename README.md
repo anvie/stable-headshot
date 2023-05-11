@@ -1,6 +1,9 @@
 # Stable Diffusion web UI
 
-This is custom fork of [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) designed for headshot photo.
+This is custom fork of [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) designed for headshot photo generation.
+
+![](ss1.png)
+![](ss2.png)
 
 ## Features
 [Detailed feature showcase with images](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features):
