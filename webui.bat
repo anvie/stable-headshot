@@ -42,6 +42,11 @@ echo venv %PYTHON%
 
 setlocal enabledelayedexpansion
 
+mkdir -p "models\Codeformer"
+mkdir -p "models\Lora"
+mkdir -p "models\GFPGAN"
+mkdir -p "models\Stable-diffusion"
+
 REM Download dependencies
 set "file_names[0]=./extensions/sd-webui-controlnet/models/control_openpose-fp16.yaml"
 set "urls[0]=https://huggingface.co/KorewaDes/basicmodel/raw/main/control_openpose-fp16.yaml"
