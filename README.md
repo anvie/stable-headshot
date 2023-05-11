@@ -1,7 +1,6 @@
 # Stable Diffusion web UI
-A browser interface based on Gradio library for Stable Diffusion.
 
-![](screenshot.png)
+This is custom fork of [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) designed for headshot photo.
 
 ## Features
 [Detailed feature showcase with images](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features):
