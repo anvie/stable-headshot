@@ -63,7 +63,8 @@ set i=0
 if defined file_names[%i%] (
     if not exist "!file_names[%i%]!" (
         echo File !file_names[%i%]! does not exist, downloading from !urls[%i%]!...
-        powershell -command "& { (New-Object Net.WebClient).DownloadFile('!urls[%i%]!', '!file_names[%i%]!') }"
+        @REM powershell -command "& { (New-Object Net.WebClient).DownloadFile('!urls[%i%]!', '!file_names[%i%]!') }"
+        powershell -command "Invoke-WebRequest -Uri !urls[%i%]! -OutFile !file_names[%i%]!"
     ) else (
         echo File !file_names[%i%]! already exists, skipping download.
     )
