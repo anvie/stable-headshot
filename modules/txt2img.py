@@ -35,8 +35,6 @@ def txt2img(id_task: str, prompt: str, negative_prompt: str, prompt_styles, step
     override_settings = create_override_settings_dict(override_settings_texts)
 
     normalized_prompt = normalize_prompt(prompt)
-    print("normalized_prompt:", normalized_prompt)
-    # print("negative prompt:", NEGATIVE_PRESET)
 
     p = StableDiffusionProcessingTxt2Img(
         sd_model=shared.sd_model,
