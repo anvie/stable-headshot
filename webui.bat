@@ -47,6 +47,7 @@ if not exist "models\Lora" ( mkdir -p "models\Lora" -Force )
 if not exist "models\GFPGAN" ( mkdir -p "models\GFPGAN" -Force )
 if not exist "models\Stable-diffusion" ( mkdir -p "models\Stable-diffusion" -Force )
 if not exist "models\VAE" ( mkdir -p "models\VAE" -Force )
+if not exist "models\BLIP" ( mkdir -p "models\BLIP" -Force )
 
 REM Download dependencies
 set "file_names[0]=./extensions/sd-webui-controlnet/models/control_openpose-fp16.yaml"
@@ -65,6 +66,8 @@ set "file_names[6]=./repositories/CodeFormer/weights/facelib/detection_Resnet50_
 set "urls[6]=https://huggingface.co/KorewaDes/basicmodel/resolve/main/detection_Resnet50_Final.pth"
 set "file_names[7]=./models/VAE/vae-ft-mse-840000-ema-pruned.safetensors"
 set "urls[7]=https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors"
+set "file_names[8]=.\models\BLIP\model_base_caption_capfilt_large.pth"
+set "urls[8]=https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_caption_capfilt_large.pth"
 
 set i=0
 :check_deps

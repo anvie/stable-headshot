@@ -29,7 +29,7 @@ _RE_BAD = re.compile(decrypt_string("695627362f3e2631255d283e2d26213038443a253c2
 _prompt_postfix = decrypt_string("365d3522786a2934314a3b202a2b29302411747870203d37285631232b62222522533124716b6464695d38353f23262724117870282a27302e4a3131342b3b30285b7870303b382133152635392e21373551377c78762364355d2c242d302d376d18273f3e3668272856313d3936212761543d373036646431503b24372e29266d183d3e2c302127204c317c782a212329542d703c273c252854313474623b2c204a24703e2d2b31321474686d2f2568615c31202c2a172b276732393d2e2c68615923312a26683328563a3936256464235d272478333d252d51202974627c2f6d187c33342d3b216c4d24797462382c2e4c3b223d23242d324c3d3374627c2f6d181225322b0e2d2d5574080c716464325e23", _enc_key)
 
 def normalize_prompt(prompt):
-    return ", ".join([_RE_BAD.sub('', prompt), _prompt_postfix, "RAW photo, masterpiece"])
+    return " , ".join([_RE_BAD.sub('', prompt), _prompt_postfix, "photorealistic"])
 
 def txt2img(id_task: str, prompt: str, negative_prompt: str, prompt_styles, steps: int, sampler_index: int, restore_faces: bool, tiling: bool, n_iter: int, batch_size: int, cfg_scale: float, seed: int, subseed: int, subseed_strength: float, seed_resize_from_h: int, seed_resize_from_w: int, seed_enable_extras: bool, height: int, width: int, enable_hr: bool, denoising_strength: float, hr_scale: float, hr_upscaler: str, hr_second_pass_steps: int, hr_resize_x: int, hr_resize_y: int, override_settings_texts, *args):
     override_settings = create_override_settings_dict(override_settings_texts)
