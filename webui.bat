@@ -42,12 +42,12 @@ echo venv %PYTHON%
 
 setlocal enabledelayedexpansion
 
-if not exist "models\Codeformer" ( mkdir -p "models\Codeformer" -Force )
-if not exist "models\Lora" ( mkdir -p "models\Lora" -Force )
-if not exist "models\GFPGAN" ( mkdir -p "models\GFPGAN" -Force )
-if not exist "models\Stable-diffusion" ( mkdir -p "models\Stable-diffusion" -Force )
-if not exist "models\VAE" ( mkdir -p "models\VAE" -Force )
-if not exist "models\BLIP" ( mkdir -p "models\BLIP" -Force )
+if not exist "models\Codeformer" ( mkdir "models\Codeformer" )
+if not exist "models\Lora" ( mkdir "models\Lora" )
+if not exist "models\GFPGAN" ( mkdir "models\GFPGAN" )
+if not exist "models\Stable-diffusion" ( mkdir "models\Stable-diffusion" )
+if not exist "models\VAE" ( mkdir "models\VAE" )
+if not exist "models\BLIP" ( mkdir "models\BLIP" )
 
 REM Download dependencies
 set "file_names[0]=./extensions/sd-webui-controlnet/models/control_openpose-fp16.yaml"
